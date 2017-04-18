@@ -215,9 +215,7 @@ h2{
 #profileImage{
 	padding: 15px; float: left;
 }
-textarea{
-	columns: 60;
-}
+
 
 
 @media screen and (max-width: 980px){
@@ -263,11 +261,11 @@ textarea{
 	#mainContentDiv{
 		position: relative;
 	}
-	footer{
-		position: absolute;
-		bottom: 0;
-	}
+	
 	#footerIndex{
+		position: fixed;
+	}
+	#footerPortfolio{
 		position: relative;
 	}
 	header{
