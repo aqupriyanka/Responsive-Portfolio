@@ -455,12 +455,14 @@ h2{
 	#mainContentDiv{
 		position: relative;
 	}
-	/*footer{
-		position: absolute;
-		bottom: 0;
-	}*/
+	footer{
+		position: fixed;
+	}
+	#footerPortfolio{
+		position: fixed;
+	}
 	#footer{
-		position: relative;
+		position: fixed;
 	}
 	div.image img{
 		width: 350px;
