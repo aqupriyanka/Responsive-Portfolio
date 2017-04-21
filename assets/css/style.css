@@ -5,11 +5,12 @@
     box-sizing: border-box;
 }
 html{
-	min-height: 100%;
+	/*min-height: 100%;*/
 
 }
 body{
 	 /*height: 1054px;*/
+	 /*margin-bottom: 80px;*/
     background-image: url("../img/ep_naturalwhite.png");
     background-repeat: repeat;
     /*position: relative;*/
@@ -106,8 +107,6 @@ aside{
 	width: 250px;
 	height: 200px;
 	border : 1px outset #dddddd;
-	/*right: 20px;*/
-	/*position: absolute;*/
 	float: right;
 	border: 2px outset white;
 	margin-top: 50px;
@@ -121,12 +120,12 @@ aside a{
 }
 footer{
 	clear: both;
-	height: 40px;
+	height: 60px;
 	background: #666666;
 	border-top: 10px solid teal;
 	text-align: center;
 	padding: 20px;
-	/*position: absolute;*/
+	position: absolute;
 	bottom: 0;
 	width: 100%;
 	display: block;
@@ -219,9 +218,9 @@ h2{
 
 
 @media screen and (max-width: 980px){
-	/*body{
-		position: relative;
-	}*/
+	body{
+		width: 980px;
+	}
 	section{
 		width: 500px;
 		clear: both;
@@ -269,13 +268,13 @@ h2{
 		position: relative;
 	}
 	header{
-		width: 980px;
+		/*width: 980px;*/
 		margin: auto;
 	}
 	
 	#headerDiv{
 		width: 700px;
-		margin-left: 50px;
+		/*margin-left: 50px;*/
 	}
 
 	#unorderedHeaderList{
@@ -295,11 +294,11 @@ h2{
 }
 
 @media screen and (max-width: 768px){
-	/*body{
-		position: relative;
-	}*/
+	body{
+		max-width: 768px;
+	}
 	section{
-		width: 600px;
+		width: 550px;
 		margin-left: 50px;
 		margin-bottom: 0px;
 		float: none;
@@ -311,7 +310,7 @@ h2{
 	}
 
 	aside{
-		width: 600px;
+		width: 550px;
 		margin-left: 50px;
 		margin-bottom: 100px;
 		float: left;
@@ -337,18 +336,26 @@ h2{
 	}
 	#headerDiv{
 		width: 768px;
-		margin-left: 50px;
+		/*margin-left: 50px;*/
 	}
 	header{
 		width: 768px;
 
 	}
+
+	.container-width{
+		width: 768px;
+	}
+	.conatiner{
+		width: 768px;
+	}
+
 	#nameHeader{
 		font-size: 25px;width: 180px;
 
 	}
 	#headerDiv{
-		width: 500px;
+		width: 550px;
 	}
 
 	#unorderedHeaderList{
@@ -359,28 +366,41 @@ h2{
 	#mainContentDiv{
 		position: relative;
 	}
-	/*footer{
-		position: absolute;
-		bottom: 0;
-	}*/
+	footer{
+		position: static;
+		/*bottom: 0;*/
+	}
 	#footer{
 		position: relative;
 	}
 	div.image img{
-		width: 250px;
+		width: 220px;
 	}
 	div.image h2{
-		width: 250px;
+		width: 220px;
 	}
 
+
+
+
+
+
+
 	@media screen and (max-width: 640px){
-	/*body{
-		position: relative;
-	}*/
+	body{
+		max-width: 640px;
+	}
+	.container-width{
+		width: 640px;
+	}
+	.container{
+		width: 640px;
+	}
 	section{
-		width: 450px;
-		margin-left: 50px;
-		margin-bottom: 0px;
+		width: 350px;
+		margin-left: 100px;
+		margin-bottom: 0px;	
+		/*margin:auto;*/
 		float: none;
 
 	}
@@ -398,8 +418,8 @@ h2{
 	}
 
 	aside{
-		width: 450px;
-		margin-left: 50px;
+		width: 350px;
+		margin-left: 100px;
 		margin-bottom: 100px;
 		float: left;
 		height: 150px;
@@ -418,59 +438,77 @@ h2{
 
 	
 	#headerDiv{
-		width: 450px;
-		margin-left: 0px;
-		height: 100px;
+		width: 640px;
+		/*left: 0;*/
+		height: 120px;
+		background: none;
+		margin-left: 0;
+		
 	}
 	header{
-		width: 640px;
-		height: 100px;
+		width: 450px;
+		height: 120px;
 		line-height: 60px;
+		background: none;margin: 0;
 
 	}
 	#nameHeader{
 		font-size: 35px;
 		width: 640px;
-		height: 80px;
-		margin:auto;
+		height: 60px;
+		text-align:center;
+		left: 0;
+		position: static;margin: auto;
+
 
 	}
 	li.listHeader{
 		/*height: auto;*/
 		font-size: 15px;
 		font-weight: normal;
-		margin-top: 0;
+		margin-top: 0px;
 		float: none;
 		display: inline;
-		margin: auto;
+		/*margin: auto;*/
 	}
 	
 	#unorderedHeaderList{
 		width: 640px;
-		float: none;
+		float: left;
 		background-color: white;
-		margin: 0;
+		left: 0;
+		position: static;
+		margin: auto;
 		/*display: inline;*/
 	}
 	#mainContentDiv{
 		position: relative;
 	}
 	footer{
-		position: fixed;
+		position: static;
 	}
-	#footerPortfolio{
+	/*footer{
+		/*position: absolute;*/
+		/*bottom: 0;
+		height: 60px;
+		width: 100%;
+	}*/
+	/*#footerPortfolio{
 		position: fixed;
-	}
-	#footer{
+	}*/
+	/*#footer{
 		position: fixed;
-	}
+	}*/
 	div.image img{
-		width: 350px;
+		width: 280px;
 	}
 	div.image h2{
-		width: 350px;
+		width: 280px;
 	}
 	textarea{
-		width: 400px;
+		width:300px;
+	}
+	input{
+		width: 300px;
 	}
 }
